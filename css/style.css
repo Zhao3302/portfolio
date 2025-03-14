@@ -1,0 +1,188 @@
+body {
+    font-family: 'Lobster', Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(93, 121, 100);
+    background: url('../img/Tent.png') center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px 60px 10px;
+    padding: 50px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.intro p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.intro .btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.intro .btn:hover {
+    background-color: darkgreen;
+}
+
+.photo_glass_box {
+    background: rgba(15, 11, 11, 0.767);
+    backdrop-filter: blur(10px);
+    border-radius: 10px 60px 10px;
+    padding: 20px;
+    max-width: 1920px;
+    margin: 100px auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: left;
+}
+
+.contact_glass {
+    background: rgba(15, 11, 11, 0.767);
+    backdrop-filter: blur(10px);
+    border-radius: 10px 60px 10px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    max-width: 1920px;
+    max-height: 720px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    float: center;
+    display: flex;
+    align-items: center;
+}
+
+.works{
+    margin-right: 800px;
+}
+
+.photo img {
+    border-radius: 10px 60px 10px;
+    width: 200px;
+    height: auto;
+    float: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+.about {
+    margin-bottom: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.biography {
+    text-align: left;
+    font-size: 30px;
+}
+
+.biography p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a i {
+    margin-right: 8px;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-icon {
+    color: cyan;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.social-icon:hover {
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
+    transform: scale(1.2);
+}
+
+.audio {
+    margin-top: 50px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#volume-slider {
+    margin-left: 10px;
+}
